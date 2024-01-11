@@ -1,0 +1,44 @@
+/* App.css */
+.app-container {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  border: none;
+  background: linear-gradient(135deg, rgb(217, 5, 5), rgb(209, 209, 15));
+}
+
+.app-header {
+  background: transparent;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  font-weight: 800;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.app-logo {
+  height: 200px;
+}
+
+.custom-header {
+  background: transparent;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  font-weight: 800;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.app-content {
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
