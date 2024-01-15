@@ -1,0 +1,48 @@
+/* Login.css */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-content {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid plum;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.login-title {
+    font-size: 34px;
+    color: black;
+    font-weight: 900;
+}
+
+.login-description {
+    font-size: 16px;
+    color: rgb(81, 79, 79);
+    font-weight: 900;
+    margin: 10px 10px;
+}
+
+.login-input {
+    width: 80%;
+    padding: 10px;
+    font-weight: 900;
+    margin: 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.login-button {
+    background-color: green;
+    color: black;
+    font-weight: 800;
+    border: 3px solid yellowgreen;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
