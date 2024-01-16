@@ -1,0 +1,158 @@
+/* Dashboard.css */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.notifications {
+    list-style: none;
+    padding: 0;
+}
+
+.notification-item {
+    margin: 10px 0;
+    background: #F7E9E9;
+    border: 2px solid #ffbaba;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    transform: scale(1);
+}
+
+.notification-text {
+    font-weight: 700;
+    color: #444;
+    background: #f6dada;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, color 0.3s;
+}
+
+.notification-text strong {
+    font-weight: 800;
+    font-size: 16px;
+    color: #211f1f;
+}
+
+.notification-text p {
+    margin: 10px 0;
+    padding: 10px;
+    color: #a19a9a;
+}
+
+
+.accept-button {
+    background: #4CAF50;
+    /* Daha canlı yeşil arka plan rengi */
+    color: #fff;
+    /* Beyaz metin rengi */
+    border: none;
+    /* Kenarlık kaldırıldı */
+    padding: 10px 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+
+    &:hover {
+        background: #45A049;
+        color: #fff;
+    }
+}
+
+.reject-button {
+    background: #FF0000;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+
+    &:hover {
+        background: #FF3333;
+        color: #fff;
+    }
+}
+
+
+.spot-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.spot-item {
+    margin: 10px;
+    background: rgb(247, 233, 233);
+    border: 2px solid #f3d9d9;
+    border-radius: 10px;
+    padding: 20px;
+    width: 230px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    transform: scale(1);
+}
+
+.spot-item:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.spot-image {
+    width: 100%;
+    height: 190px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+
+.spot-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.spot-price {
+    font-size: 18px;
+    color: #69acf4;
+    font-weight: 600;
+    margin: 10px;
+    float: right;
+}
+
+.add-spot-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.add-spot-button {
+    background: #4CAF50;
+    color: #000;
+    border: 3px solid #4CAF50;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+
+    &:hover {
+        background: #45A049;
+        color: white;
+    }
+}
