@@ -1,0 +1,291 @@
+{
+	"info": {
+		"_postman_id": "31cd0681-a367-4291-beb2-a1d3eb46488e",
+		"name": "Airbnb-TR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18755351"
+	},
+	"item": [
+		{
+			"name": "get dashboard",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user_id",
+						"value": "6543cd6c1fa7542a0083b32a",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3033/dashboard",
+					"host": [
+						"localhost"
+					],
+					"port": "3033",
+					"path": [
+						"dashboard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get spots",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3033/spots?tech=mobi",
+					"host": [
+						"localhost"
+					],
+					"port": "3033",
+					"path": [
+						"spots"
+					],
+					"query": [
+						{
+							"key": "tech",
+							"value": "mobi"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Bookings",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user_id",
+						"value": "6543cd6c1fa7542a0083b32a",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3033/bookings",
+					"host": [
+						"localhost"
+					],
+					"port": "3033",
+					"path": [
+						"bookings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post spots",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user_id",
+						"value": "6543afae02bd27275456acd2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "thumbnail",
+							"contentType": "",
+							"type": "file",
+							"src": "/C:/Users/Taner/Desktop/Walpaper/kahve.jpg"
+						},
+						{
+							"key": "company",
+							"value": "Şirket Kahve",
+							"type": "text"
+						},
+						{
+							"key": "techs",
+							"value": "Web , Mobile Development",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "2500",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3033/spots",
+					"host": [
+						"localhost"
+					],
+					"port": "3033",
+					"path": [
+						"spots"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post sessions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"rqo@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3033/sessions",
+					"host": [
+						"localhost"
+					],
+					"port": "3033",
+					"path": [
+						"sessions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post spot / {spot_id} /bookings",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user_id",
+						"value": "6543cd6c1fa7542a0083b32a",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"date\": \"2023-11-14\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3033/spots/6543d0e61fa7542a0083b32e/bookings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3033",
+					"path": [
+						"spots",
+						"6543d0e61fa7542a0083b32e",
+						"bookings"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post bookings / {booking_id} / approvals",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user_id",
+						"value": "6543afae02bd27275456acd2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3033/bookings/6543b20211371403bc7e8643/approvals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3033",
+					"path": [
+						"bookings",
+						"6543b20211371403bc7e8643",
+						"approvals"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post bookings/ {booking_id}  / rejections",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user_id",
+						"value": "6543afae02bd27275456acd2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3033/bookings/6543b20211371403bc7e8643/rejections",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3033",
+					"path": [
+						"bookings",
+						"6543b20211371403bc7e8643",
+						"rejections"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
