@@ -1,7 +1,7 @@
-  Project Screenshots
 
 Project Screenshots
 ===================
+    <p>Below are screenshots of key moments in the development of our project. Each image corresponds to a specific commit along with its commit message and date. These snapshots provide a visual overview of the project's evolution, showcasing the addition of pages, dashboard features, and the login interface. The images are sourced from the "resimler" directory, offering insights into the project's progression over time.</p>
 
 *   **Home.png**  
     ![Adsız.png](resimler/Adsız.png)
