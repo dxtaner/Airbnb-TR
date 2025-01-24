@@ -10,8 +10,8 @@ Installation
 ------------
 
 1.  Clone the repository to your local machine.
-`git clone https://github.com/dxtaner/Airbnb-TR Navigate to the project directory.
-`cd your-repo`5.  Install dependencies using npm.
+`git clone https://github.com/dxtaner/Airbnb-TR` Navigate to the project directory.
+`cd your-repo`.  Install dependencies using npm.
 `npm install`
 
 Usage
